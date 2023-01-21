@@ -38,7 +38,7 @@ werden.
 
 ## Durchführung
 
-<img alt="Roboter" height="500" src="/bilder/roboter.jpg" title="Roboter" width="200"/>
+<img alt="Roboter" height="400" src="/bilder/roboter.jpg" title="Roboter" width="200"/>
 
 
 
