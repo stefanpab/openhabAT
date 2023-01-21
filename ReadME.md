@@ -51,7 +51,8 @@ gibt. Die ganzen Einstellungen und Konfigurationen werden im Folgenden beschrieb
 **Aterics Grid:** <br>
 Nach korrektem herunterladen der Programme haben wir uns darum gekümmert, ein Asterics GRID
 zu erstellen. Wir haben zwei Seiten erstellt, eine Startseite und eine Seite zur Steuerung
-des Roboters. Diese sehen wie folgt aus:
+des Roboters. Diese sehen wie folgt aus:<br>
+
 <img alt="Startseite Grid" height="200" src="/bilder/startseite_astericsgrid.png" title="Startseite Grid" width="400"/>
 <img alt="Roboterseite Grid" height="200" src="/bilder/roboterseite_astericsgrid.png" title="Roboterseite Grid" width="400"/>
 
@@ -79,7 +80,17 @@ der Fernbedienung zu drücken und danach die Programmiertaste im IR Trans Progra
 <br>
 
 **ARE und ACS:** <br>
-TEXT
+Um alle Komponenten wie IR Trans, Asterics Grid, OpenHAB zu verbinden erstellten wir ein
+ARE Modell. Dieses wurde in der Asterics Configuration Suite erstellt. Das ARE Modell wurde
+von Moodle heruntergeladen. Die notwendigen Komponenten wurde, wie im nachfolgenden Bild
+gezeigt, miteinander verbunden. Anschließend verbindet man sich mit der ARE und drückt den
+Button "Start Model". Die Kameramaus wurde in der ARE gestartet, wie ebenfalls folgend im
+Bild zu sehen ist.
+<br>
+
+<img alt="ACS Modell" height="400" src="/bilder/acs_model.png" title="ACS Modell" width="200"/>
+<img alt="Arbeiten mit ACS" height="400" src="/bilder/acs_working.jpg" title="Arbeiten mit ACS" width="200"/>
+<img alt="ARE Kameramaus" height="400" src="/bilder/are_cameramouse.png" title="ARE Kameramaus" width="200"/>
 <br>
 
 **FABI:** <br>
@@ -90,15 +101,32 @@ steuern zu können. Zudem haben wir den Schwellenwert für langes Drücken auf 5
 da das lange Drücken nicht zu lange dauern sollte, da es sonst für Gerald anstrengend werden
 könnte. Die Konfigurationen sahen wie folgt aus:<br>
 <img alt="FABI Konfiguration Slots" height="200" src="/bilder/fabiconf_slots.png" title="FABI Konfiguration Slots" width="400"/>
-<img alt="FABI Konfiguration Timing" height="200" src="/bilder/fabiconf_timing" title="FABI Konfiguration Timing" width="400"/>
-<br>
+<img alt="FABI Konfiguration Timing" height="200" src="/bilder/fabiconf_timing.png" title="FABI Konfiguration Timing" width="400"/>
+<br><br>
 
 Abschließend wurde ein FittsTask2D Test durchgeführt. Dieser wurde nach Anleitung von Moodle
 durchgeführt. Das Programm wurde installiert und anschließend wurde der Test gemacht. Es
 wurde eine Zusammenfassung erstellt. Der Test bestand aus 9 Übungen, welche per Augensteuerung
 durchgeführt wurden. Am Ende wurde ebenfalls das Beste und schlechteste Ergebnis ausgewählt.
 Diese sehen wie folgt aus:<br>
+
 <img alt="FittsTask Zusammenfassung" height="200" src="/bilder/fittstask_summary.png" title="FittsTask Zusammenfassung" width="400"/>
 <img alt="FittsTask bestes Ergebnis" height="200" src="/bilder/fittstask_bestresult.png" title="FittsTask bestes Ergebnis" width="400"/>
 <img alt="FittsTask schlechtestes Ergebnis" height="200" src="/bilder/fittstask_worstresult.png" title="FittsTask schlechtestes Ergebnis" width="400"/>
 <br>
+
+**Aufbau:**
+<br>
+Der Fabi Button wurde mithilfe einer Halterung am rechten Bettrand (aus der Sicht von Gerald)
+montiert. Der Laptop befindet sich auf Bauchhöhe ebenfalls mit einer Halterung, welche
+links und rechts am Bett befestigt ist. <br>
+
+<img alt="FABI Halterung" height="400" src="/bilder/fabi_halterung.jpg" title="FABI Halterung" width="200"/>
+<img alt="FABI Halterung Bett" height="400" src="/bilder/halterung_bett_fabi.jpg" title="FABI Halterung Bett" width="200"/>
+<img alt="Laptop Montage 1" height="200" src="/bilder/laptop_montage.jpg" title="Laptop Montage 1" width="400"/>
+<img alt="Laptop Montage 2" height="400" src="/bilder/laptop_montage2.jpg" title="Laptop Montage 2" width="200"/>
+<br>
+
+Die Heizsteuerung sieht wie folgt aus:<br>
+
+<img alt="Heizsteuerung" height="400" src="/bilder/heizsteuerung.jpg" title="Heizsteuerung" width="200"/>
