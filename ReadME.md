@@ -88,7 +88,7 @@ Button "Start Model". Die Kameramaus wurde in der ARE gestartet, wie ebenfalls f
 Bild zu sehen ist.
 <br>
 
-<img alt="ACS Modell" height="400" src="/bilder/acs_model.png" title="ACS Modell" width="200"/>
+<img alt="ACS Modell" height="200" src="/bilder/acs_model.png" title="ACS Modell" width="400"/>
 <img alt="Arbeiten mit ACS" height="400" src="/bilder/acs_working.jpg" title="Arbeiten mit ACS" width="200"/>
 <img alt="ARE Kameramaus" height="400" src="/bilder/are_cameramouse.png" title="ARE Kameramaus" width="200"/>
 <br>
@@ -121,10 +121,10 @@ Der Fabi Button wurde mithilfe einer Halterung am rechten Bettrand (aus der Sich
 montiert. Der Laptop befindet sich auf Bauchhöhe ebenfalls mit einer Halterung, welche
 links und rechts am Bett befestigt ist. <br>
 
-<img alt="FABI Halterung" height="400" src="/bilder/fabi_halterung.jpg" title="FABI Halterung" width="200"/>
+<img alt="FABI Halterung" height="400" src="/bilder/fabi_halterung.jpg" title="FABI Halterung" width="300"/>
 <img alt="FABI Halterung Bett" height="400" src="/bilder/halterung_bett_fabi.jpg" title="FABI Halterung Bett" width="200"/>
-<img alt="Laptop Montage 1" height="200" src="/bilder/laptop_montage.jpg" title="Laptop Montage 1" width="400"/>
-<img alt="Laptop Montage 2" height="400" src="/bilder/laptop_montage2.jpg" title="Laptop Montage 2" width="200"/>
+<img alt="Laptop Montage 1" height="300" src="/bilder/laptop_montage.jpg" title="Laptop Montage 1" width="400"/>
+<img alt="Laptop Montage 2" height="400" src="/bilder/laptop_montage2.jpg" title="Laptop Montage 2" width="250"/>
 <br>
 
 Die Heizsteuerung sieht wie folgt aus:<br>
