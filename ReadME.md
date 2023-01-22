@@ -1,11 +1,11 @@
 # AT-USE-CASE Klient Gerald Schlafzimmer
 ## Aufgabenstellung
 Die Aufgabenstellung war es, verschiedene Funktionen für Gerald zu erstellen, damit es ihm 
-aufgrund seiner Beeinträchtigungen dennoch möglich ist einige Dinge zu tun können.
+aufgrund seiner Beeinträchtigungen dennoch möglich ist einige Dinge tun zu können.
 Gerald ist körperlich stark eingeschränkt und hat eine Hörbeeinträchtigung. Er kann zwar Klänge
-wahrnehmen, allerdings ist er auf Hilfe angewiesen. Er möchte dennoch in der Lage sein,
-seine Umgebung zu steuern, im Internet surfen können und mit Freunden kommunizieren können.
-Zusammenfassend möchte er folgende Sachen machen können:
+wahrnehmen, allerdings ist er auf Hilfe angewiesen. Er hat zwar eine 24h Hilfe, möchte 
+dennoch in der Lage sein, seine Umgebung zu steuern, im Internet zu surfen und mit Freunden
+zu kommunizieren. Zusammenfassend möchte er folgende Sachen machen können:
 - Umgebungssteuerung
   - Steuerung des Lichtes und der Temperatur
   - Spielzeug (Roboter)
@@ -33,20 +33,20 @@ werden.
 - Sejla Zukic
 
 ## Verwendete Eingabegeräte
-- Augensteuerung
+- Kameramaus
 - FABI
-- IR Trans
 
 ## Durchführung
-Um die Aufgabe durchführen zu können, werden vier Programme benötigt: OpenHAB, FABI
-Configuration, Asterics Configuration Suite und ARE<br>
+Um die Aufgabe durchführen zu können, werden fünf Programme benötigt: OpenHAB, FABI
+Configuration, Asterics Grid, Asterics Configuration Suite und ARE.<br>
 Diese Programme werden laut Anleitungen auf Moodle heruntergeladen. <br>
-Mithilfe der Augensteuerung, welche mithilfe des ARE-Modells bedient wurde, kann Gerald
+Mithilfe der Kameramaus, welche durch das ARE-Modell bedient wurde, kann Gerald
 alle Funktionen des Laptops steuern oder auch das Grid steuern, wenn er möchte. Die Grid
-Steuerung wird allerdings vorrangig mithilfe von FABI gesteuert. Er kann entweder die 
-Augensteuerung oder FABI benutzen, allerdings nicht gleichzeitig. Um zwischen den Modi zu
-wechseln, muss Gerald seine Assistenz rufen, wofür es am Asterics Grid einen eigenen Button
-gibt. Die ganzen Einstellungen und Konfigurationen werden im Folgenden beschrieben:
+Steuerung wird allerdings vorrangig mithilfe von FABI gesteuert. Er kann entweder die
+Kameramaus oder einen FABI Button benutzen, allerdings nicht gleichzeitig. Um zwischen den 
+Modi zu wechseln, muss Gerald seine Assistenz rufen, wofür es am Asterics Grid einen 
+eigenen Button gibt. Die ganzen Einstellungen und Konfigurationen werden im Folgenden 
+beschrieben:
 
 **Aterics Grid:** <br>
 Nach korrektem herunterladen der Programme haben wir uns darum gekümmert, ein Asterics GRID
@@ -67,12 +67,14 @@ Liste der notwendigen Parameter sieht wie folgt aus:
   - Temperatur in der Wohnung (Number): SOLL_Wohnung_Temp
   - Nachtabsenkung (Switch): Sem_Nachtabsenkung
 
+Da im Labor die Dimmung nicht funktioniert hat, wurde diese auch in diesem Projekt nicht benutzt.
+<br>
+
 <img alt="Asterics Grid Einstellungen" height="200" src="/bilder/astericsgrid_einstellungen.PNG" title="Asterics Grid Einstellungen" width="400"/>
 
 Um den Roboter zu steuern, wurden die Funktionen der Roboter Fernbedienung mithilfe des IR
-Trans programmiert. Dafür wurde die Konfigurationsdatei des IR Trans heruntergeladen. Um die
-Funktionen mithilfe des Asterics Grid steuern zu können, ist es zuerst notwendig die Taste
-der Fernbedienung zu drücken und danach die Programmiertaste im IR Trans Programm.
+Trans eingelesen und können über Asterics Grid Buttons ausgegeben werden. Dafür wurde die 
+Konfigurationsdatei des IR Trans heruntergeladen.
 
 <img alt="Roboter" height="400" src="/bilder/roboter.jpg" title="Roboter" width="200"/>
 <img alt="Fernbedienung Roboter" height="400" src="/bilder/fernbedienung_roboter.jpg" title="Fernbedienung Roboter" width="200"/>
@@ -80,10 +82,9 @@ der Fernbedienung zu drücken und danach die Programmiertaste im IR Trans Progra
 <br>
 
 **ARE und ACS:** <br>
-Um alle Komponenten wie IR Trans, Asterics Grid, OpenHAB zu verbinden erstellten wir ein
-ARE Modell. Dieses wurde in der Asterics Configuration Suite erstellt. Das ARE Modell wurde
-von Moodle heruntergeladen. Die notwendigen Komponenten wurde, wie im nachfolgenden Bild
-gezeigt, miteinander verbunden. Anschließend verbindet man sich mit der ARE und drückt den
+Um alle Komponenten wie IR Trans, Asterics Grid, OpenHAB zu verbinden modifizierten wir ein
+zur Verfügung gestelltes ARE Modell. Die notwendigen Komponenten wurden, wie im nachfolgenden 
+Bild gezeigt, miteinander verbunden. Anschließend verbindet man sich mit der ARE und drückt den
 Button "Start Model". Die Kameramaus wurde in der ARE gestartet, wie ebenfalls folgend im
 Bild zu sehen ist.
 <br>
@@ -95,7 +96,7 @@ Bild zu sehen ist.
 
 **FABI:** <br>
 Den FABI kann man auf folgender [Seite](https://fabi.asterics.eu/index_fabi.htm) 
-konfigurieren. Wir haben zwei Button Aktionen programmiert. Kurz Drücken und lang
+konfigurieren. Wir haben zwei Button Aktionen programmiert: Kurz Drücken und lang
 gedrückt halten. Dies haben wir getan, um mithilfe des FABIs das Asterics Grid per Scanning
 steuern zu können. Zudem haben wir den Schwellenwert für langes Drücken auf 500ms gestellt,
 da das lange Drücken nicht zu lange dauern sollte, da es sonst für Gerald anstrengend werden
@@ -106,7 +107,7 @@ könnte. Die Konfigurationen sahen wie folgt aus:<br>
 
 Abschließend wurde ein FittsTask2D Test durchgeführt. Dieser wurde nach Anleitung von Moodle
 durchgeführt. Das Programm wurde installiert und anschließend wurde der Test gemacht. Es
-wurde eine Zusammenfassung erstellt. Der Test bestand aus 9 Übungen, welche per Augensteuerung
+wurde eine Zusammenfassung erstellt. Der Test bestand aus 9 Übungen, welche per Kameramaus
 durchgeführt wurden. Am Ende wurde ebenfalls das Beste und schlechteste Ergebnis ausgewählt.
 Diese sehen wie folgt aus:<br>
 
@@ -130,3 +131,22 @@ links und rechts am Bett befestigt ist. <br>
 Die Heizsteuerung sieht wie folgt aus:<br>
 
 <img alt="Heizsteuerung" height="400" src="/bilder/heizsteuerung.jpg" title="Heizsteuerung" width="200"/>
+
+**Einstellungen erleichterte Bedienung PC**
+<br>
+
+Um die Bedienung am Computer einfacher zu gestalten, haben wir folgende Einstellungen in den
+Windows Einstellungen vorgenommen:
+
+<img alt="Bildschirmtastatur" height="200" src="/bilder/bildschirmtastatur.PNG" title="Bildschirmtastatur" width="400"/>
+<img alt="Große Buttons" height="200" src="/bilder/große_buttons.PNG" title="Große Buttons" width="400"/>
+
+**Kommunikation mit Freunden und Bekannten**
+<br>
+
+Damit sich Gerald mit Freunden und Bekannten unterhalten kann, benutzen wir Discord und Whatsapp
+Web. Über Whatsapp Web ist es ihm möglich zu schreiben und über Discord besteht die Möglichkeit
+zu schreiben, als auch zu telefonieren oder per Videoanruf zu chatten. 
+
+<img alt="Discord" height="200" src="/bilder/discord.PNG" title="Discord" width="400"/>
+<br>
